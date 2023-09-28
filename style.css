@@ -5,14 +5,42 @@ body {
     justify-content: center;
 }
 
+img {
+    background-color: black;
+}
+
 .form-container {
     display: flex;
-    height: 600px;
-    width: 1200px;
+    height: 700px;
+    width: 1300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .form-right {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(19, 18, 23);
     width: 800px;
     padding: 30px;
+}
+
+.form-heading {
+    color: rgb(242, 239, 254);
+    font-family: 'montserrat';
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 100px;
+}
+
+.form-content {
+    display: flex;
+    flex: 1;
+    padding: 50px;
+    border: 1px solid white;
+}
+
+form > div {
+    margin-bottom : 30px;
 }
