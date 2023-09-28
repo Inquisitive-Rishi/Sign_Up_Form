@@ -21,7 +21,7 @@ img {
     display: flex;
     flex-direction: column;
     color: white;
-    font-size: 1.4em;
+    font-size: 1.3em;
     --bgClr: rgb(19, 18, 23);
     background-color: var(--bgClr);
     width: 800px;
@@ -43,6 +43,15 @@ img {
     padding: 40px;
 }
 
+form input:focus {
+    
+    color: white;
+    background-color: var(--bgClr);
+    border: 1px solid rgb(97, 97, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 1.3em;
+}
+
 form > div {
     margin-bottom : 30px;
 }
@@ -58,10 +67,19 @@ form > div {
 }
 
 form input {
+    box-sizing: border-box;
     color: white;
     background-color: var(--bgClr);
     border: 0.5px solid grey;
     font-size: 1.3em;
+}
+
+form .login #login {
+    font-weight: 900;
+}
+
+form .login #login:hover {
+    cursor: pointer;
 }
 
 input[type='tel'],
@@ -69,18 +87,19 @@ input[type='email'] {
     border: 0.5px solid rgb(63, 62, 62);
 }
 
+
 button {
     color: white;
     font-weight: 700;
     font-size: 1.1em;
     padding: 15px 20px;
-    background-color: rgb(244, 55, 115);
+    background-color: rgb(244, 121, 55);
 }
 
 button:hover {
-    border: 2px solid rgb(244, 55, 115);
+    border: 2px solid rgb(244, 121, 55);
     background-color: var(--bgClr);
-    rotate: calc(-1.5deg);
+    rotate: calc(-1.7deg);
 }
 
 button:hover::after {
